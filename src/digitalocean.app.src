@@ -1,0 +1,21 @@
+{application, digitalocean, [
+	{description, "DigitalOcean API Service"},
+	{vsn, "1"},
+	{registered, []},
+	{applications, [
+		kernel,
+		stdlib,
+		crypto,
+		asn1,
+		public_key,
+		ssl,
+		inets
+	]},
+	{ modules, [ 
+		digitalocean
+	]},
+	{mod, { digitalocean_app, []}},
+	{env, [
+		{ token, <<"">> }
+	]}
+]}.
